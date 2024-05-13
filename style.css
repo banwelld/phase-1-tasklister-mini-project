@@ -7,11 +7,13 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(38, 41, 66), rgb(165, 177, 237));
 }
 
 button {
-  font-size: 7px;
+  font-size: 10px;
+  font-weight: bold;
+  color: darkslategray;
 }
 
 #main-content {
@@ -27,7 +29,36 @@ button {
   box-shadow: 2px 5px 5px #333;
 }
 
+#create-task-form {
+  width: 600px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+#create_task_form_framework {
+  width: 600px;
+  align-self: center;
+}
+
+#desc_input #new-task-description {
+  width: 290px;
+}
+
+#priority_input #priority_select {
+  width: 60px;
+}
+
+#date_input #date_selector {
+  width: 140px;
+}
+
+#submit_input #submit_btn {
+  width: 70px;
+}
+
 #list {
+  width: 600px;
   margin: 10px;
   border: 1px solid #333;
   background: rgba(255, 255, 255, 0.75);
@@ -35,3 +66,44 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+ #tasks {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+ }
+
+.task_text_container {
+  width: 65%;
+  border: 0;
+ }
+
+ .remove_btn_container {
+  width: 10%;
+  text-align: center;
+  border: 0;
+ }
+
+ .task_due_date_container {
+  width: 25%;
+  border: 0;
+ }
+
+ .high_priority_task {
+  background-color: lightcoral;
+  height: 35px;
+  vertical-align: middle;
+ }
+
+ .med_priority_task {
+  background-color: lightgoldenrodyellow;
+  height: 35px;
+  vertical-align: middle;
+ }
+
+ .low_priority_task {
+  background-color: lightskyblue;
+  height: 35px;
+  vertical-align: middle;
+ }
+
